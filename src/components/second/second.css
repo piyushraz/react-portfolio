@@ -1,0 +1,45 @@
+.second {
+    height: calc(100vh - 100px); /* Full viewport height minus 100px */
+    overflow: hidden;
+    background: linear-gradient(180deg, #111132, #0c0c1d); /* Background gradient */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 0 20px; /* Side padding for overall container */
+}
+
+.second .header2 {
+    color: white;
+    font-family: 'Copperplate', 'Papyrus', fantasy;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+    font-size: 55px; /* Large font size for visibility */
+    margin: 0 auto 20px auto; /* Centering header and providing bottom margin */
+}
+
+.second p {
+    color: white;
+    text-align: center; /* Ensures text is centered */
+    line-height: 50px; /* Line height for better readability */
+    font-size: large; /* Larger font size for readability */
+    width: 60%; /* Adjusting width relative to its parent to prevent end-to-end stretching */
+    max-width: 800px; /* Adjusting max-width to prevent the paragraph from being too wide */
+    margin: 70px auto; /* Margin top and bottom for spacing, auto for horizontal centering */
+    padding: 0 20px; /* Padding for text inside paragraph */
+    box-sizing: border-box; /* Includes padding and border in the width */
+    display: block; /* Default display for paragraphs */
+    white-space: normal; /* Allows text to wrap naturally */
+    overflow-wrap: anywhere; /* Allows breaking at any point to avoid overflow */
+    word-wrap: break-word; /* Alternate to overflow-wrap for better word wrapping */
+    position: relative; /* To help with exact centering */
+    transform: translateX(-50%); /* Corrects the element back to true center */
+    margin-right: 150px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1400px) {
+    .second p {
+        width: 95%; /* Adjusts width for smaller screens to be slightly narrower */
+    }
+}
